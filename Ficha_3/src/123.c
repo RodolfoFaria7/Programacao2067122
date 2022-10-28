@@ -142,25 +142,33 @@ int main(void) {
 		val++;
 	}
 
- /*
-	printf("Mutiplos de %d ate %d = 1\n", multiplos, objetivo);
-	while (val < objetivo){
-		val+=multiplos;
-		printf("Mutiplos de %d ate %d = %d\n", multiplos, objetivo, val);
-		}
  */
 
  //================================= Alinea 7 ================================
-	int fatorial = 5;
+  /*
+	int fatorial = 1;
 	int n = 5;
 	int f = 5;
 
-	while(n <= 1){
+	while(n >= 1){
 		fatorial = fatorial * n;
 		n--;
 	}
-	printf("!%d e %d", f, fatorial);
+	printf("!%d e: %d", f, fatorial);
+  */
+ //================================= Alinea 8 ================================
+	int year = 2022;
 
+	if (year % 4 == 0 && 100 != 0){
+		printf ("Ano bissexto");
+	}
+
+	else if (year % 400 == 0 ) {
+		printf ("Ano bissexto");
+	}
+	else {
+		printf ("Ano comum");
+	}
 
 	return 0;
 }
