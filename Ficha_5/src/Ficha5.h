@@ -9,5 +9,6 @@
 #define FICHA5_H_
 
 void MutiBanco(float lev);
+void PinTel();
 
 #endif /* FICHA5_H_ */

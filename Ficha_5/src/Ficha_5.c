@@ -13,6 +13,13 @@
 #include "Ficha5.h"
 
 int main(void) {
-	MutiBanco(100);
+	setvbuf(stdout, NULL ,_IONBF, 0);
+	//============================================== Alinea 1 ========================================
+	//MutiBanco(100);
+	//============================================== Alinea 2 ========================================
+	int pin;
+    printf("Insira o pin: ");
+	scanf("%d", &pin);
+	PinTel(pin);
 	return 0;
 }

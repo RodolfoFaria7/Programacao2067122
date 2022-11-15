@@ -19,3 +19,23 @@ void MutiBanco(float lev){
 
 
 }
+
+void PinTel(){
+	int tries = 0;
+	float validacao = 1234;
+	int pin = 0;
+
+	while (pin != code && tries < 3){
+		puts ("Intruduza o Pin:");
+		scanf("%d",&pin);
+
+		if (){
+
+		}
+
+	}
+
+
+
+
+}
