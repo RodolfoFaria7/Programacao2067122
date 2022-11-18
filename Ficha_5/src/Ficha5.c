@@ -19,7 +19,7 @@ void MutiBanco(float lev){
 
 
 }
-
+/*
 void PinTel(){
 	int tries = 0;
 	float validacao = 1234;
@@ -38,4 +38,45 @@ void PinTel(){
 
 
 
+}
+*/
+
+void TempoTrabalho(int he, int me, int se, int hs, int ms, int ss){
+
+	int HoraEntrada = (he*3600)+(me*60)+(se);
+
+	int HoraSaida = (hs*3600)+(ms*60)+(ss);
+
+	int HorasTrabalho =  HoraSaida - HoraEntrada;
+
+    int h, m, s, resto;
+
+    h = HorasTrabalho / 3600;
+    resto = HorasTrabalho % 3600;
+    m = resto / 60;
+    s = resto % 60;
+    printf("%d:%d:%d\n", h, m, s);
+
+}
+void Adivinha(){
+	int t = 0;
+	srand((unsigned)time(&t));
+	int segredo = rand() % 11;
+	int palpite = 0;
+
+	while (palpite != segredo){
+		puts("Indique o seu palpite:");
+		scanf("%i", &palpite);
+
+		if(palpite == segredo){
+			puts("Acertou!!");
+			break;
+		}else{
+			if(palpite > segredo){
+				puts("Acima");
+			}else{
+				puts("Abaixo");
+			}
+		}
+	}
 }

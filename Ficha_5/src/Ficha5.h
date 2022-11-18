@@ -10,5 +10,6 @@
 
 void MutiBanco(float lev);
 void PinTel();
-
+void TempoTrabalho(int he, int hs, int me, int ms, int se, int ss);
+void Adivinha();
 #endif /* FICHA5_H_ */
